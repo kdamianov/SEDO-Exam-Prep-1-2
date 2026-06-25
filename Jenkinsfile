@@ -20,7 +20,7 @@ pipeline {
                 }
             }
             steps {
-                bat 'dotnet build -- no-restore'
+                bat 'dotnet build --no-restore'
             }
         }
         stage('Test') {
