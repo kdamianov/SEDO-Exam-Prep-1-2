@@ -9,7 +9,7 @@ pipeline {
                 }
             }
             steps {
-                bat 'bat dotnet restore'
+                bat 'dotnet restore'
             }
         }
         stage('Dotnet build') {
@@ -20,7 +20,7 @@ pipeline {
                 }
             }
             steps {
-                bat 'bat dotnet build -- no-restore'
+                bat 'dotnet build -- no-restore'
             }
         }
         stage('Test') {
